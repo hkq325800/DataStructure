@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DataStructure</string>
+    <!--算法性能分析与度量-->
+    <string name="arithmetic"></string>
+</resources>
