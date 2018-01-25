@@ -3,57 +3,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context="mine.kerchin.datastructure.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:text="算法与算法分析"
-        android:onClick="arithmetic"/>
+        android:gravity="center"
+        android:onClick="arithmetic"
+        android:padding="10dp"
+        android:text="算法与算法分析" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:text="线性表（顺序映像、各类链表）"
-        android:onClick="line"/>
+        android:gravity="center"
+        android:onClick="line"
+        android:padding="10dp"
+        android:text="线性表（顺序映像、各类链表）" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:text="栈、队列、串、数组"
-        android:onClick="stack"/>
+        android:gravity="center"
+        android:onClick="stack"
+        android:padding="10dp"
+        android:text="栈、队列、串、数组" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:text="树、二叉树"
-        android:onClick="tree"/>
+        android:gravity="center"
+        android:onClick="tree"
+        android:padding="10dp"
+        android:text="树、二叉树" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:text="图、最小生成树、最短路径"
-        android:onClick="pic"/>
+        android:gravity="center"
+        android:onClick="pic"
+        android:padding="10dp"
+        android:text="图、最小生成树、最短路径" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:text="查找"
-        android:onClick="find"/>
+        android:gravity="center"
+        android:onClick="find"
+        android:padding="10dp"
+        android:text="查找" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:text="排序"
-        android:onClick="rank"/>
+        android:gravity="center"
+        android:onClick="rank"
+        android:padding="10dp"
+        android:text="排序" />
 
 </LinearLayout>

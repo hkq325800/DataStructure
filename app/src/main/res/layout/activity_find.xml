@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="顺序查找、折半查找、分块查找为静态查找表，没有插入和删除操作，因此采用顺序存储方法，通常用定长一维数组来表示。"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toLine"
+            android:padding="10dp"
+            android:text="灵活运用顺序查找"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="从表的一端开始，顺序扫描整个查找表。将扫描到的数据元素的关键字和给定值key作比较，若相等则查找成功，返回该数据元素在查找表中的下标。否则查找失败，返回值为-1。"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toHalf"
+            android:padding="10dp"
+            android:text="灵活运用折半查找"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="如果查找表用顺序存储结构并且关键字【有序】排列时，称为有序表，可使用折半查找。又称为二分查找，每进行一次关键字比较，都将缩小一半查找范围，提高查找效率。"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="灵活运用分块查找"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="又称为索引顺序查找，是顺序查找的一种改进方法。由分块有序的顺序表和索引表组成。其中分块有序的顺序表是将表R[0，n-1]分为b块；【每一块中的关键字不一定有序，但前一块中的最大关键字必须小于后一块中的最小关键字】，即表是分块有序的。而索引表则是取个块中的最大关键字及其起始位置构成的ID[0..b-1]，即ID[i]中存放第i块的最大关键字及该块表在表R中的起始位置。由于表R是分块有序的，所以索引表示一个递增有序表。要在索引顺序表中查找关键字key，首先在索引表中查找以确定待查数据元素所在的块，可以用顺序查找完成，若索引表较大，也可用折半查找。再在块中查找待查数据元素，此时用顺序查找。"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="熟练二叉排序树插入删除查找"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="了解平衡二叉排序树建树过程"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="了解B+树和B-树含义及其插入、删除和查找操作"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="熟练掌握哈希表建表方法及其查找过程，深刻理解哈希表及其他结构的实质性差别"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>

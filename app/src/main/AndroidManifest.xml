@@ -9,14 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="首页">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ArithmeticActivity"/>
+        <activity android:name=".ArithmeticActivity"
+            android:label="算法与算法分析"/>
+        <activity android:name=".FindActivity"
+            android:label="查找"/>
+        <activity android:name=".find.F_LineActivity"
+            android:label="顺序查找"/>
+        <activity android:name=".find.F_HalfActivity"
+            android:label="折半查找"/>
+        <activity android:name=".BigImageActivity"
+            android:label="大图查看"/>
     </application>
 
 </manifest>

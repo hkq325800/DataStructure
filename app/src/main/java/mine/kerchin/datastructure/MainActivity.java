@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void find(View view) {
+        startActivity(new Intent(this, FindActivity.class));
     }
 
     public void rank(View view) {
