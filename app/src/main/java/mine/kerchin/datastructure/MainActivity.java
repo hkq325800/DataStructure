@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, FindActivity.class));
     }
 
-    public void rank(View view) {
+    public void sort(View view) {
+        startActivity(new Intent(this, SortActivity.class));
     }
 }

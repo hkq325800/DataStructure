@@ -10,6 +10,7 @@ import mine.kerchin.datastructure.BigImageActivity;
 import mine.kerchin.datastructure.R;
 
 /**
+ * 折半查找
  * Created by hkq32 on 2018/1/25.
  */
 
@@ -22,5 +23,21 @@ public class F_HalfActivity extends AppCompatActivity {
 
     public void toImg(View view) {
         BigImageActivity.startMe(this, R.mipmap.ic_launcher);
+    }
+
+    public static int find(int[] arr, int tar) {
+        int low = 0;
+        int high = arr.length - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (arr[mid] == tar) {
+                return mid;//查找成功
+            } else if (arr[mid] > tar) {
+                high = mid - 1;//在前半区间继续查找
+            } else {
+                low = mid + 1;//在后半区间继续查找
+            }
+        }
+        return -1;
     }
 }

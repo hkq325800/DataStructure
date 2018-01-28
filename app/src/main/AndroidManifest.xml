@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:label="首页">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,6 +26,30 @@
             android:label="折半查找"/>
         <activity android:name=".BigImageActivity"
             android:label="大图查看"/>
+        <activity android:name=".find.F_BlockActivity"
+            android:label="分块查找"/>
+        <activity android:name=".sort.insert.S_Insert_StraightActivity"
+            android:label="直接插入排序"/>
+        <activity android:name=".sort.insert.S_Insert_HalfActivity"
+            android:label="折半插入排序"/>
+        <activity android:name=".sort.insert.S_Insert_ShellActivity"
+            android:label="希尔排序"/>
+        <activity android:name=".SortActivity"
+            android:label="排序"/>
+        <activity android:name=".sort.insert.S_Insert_2WayActivity"
+            android:label="2-路插入排序"/>
+        <activity android:name=".sort.merge.S_MergeActivity"
+            android:label="归并排序"/>
+        <activity android:name=".sort.scale.S_Scale_BubbleActivity"
+            android:label="冒泡排序"/>
+        <activity android:name=".sort.scale.S_Scale_QuickActivity"
+            android:label="快速排序"/>
+        <activity android:name=".sort.select.S_Select_SimpleActivity"
+            android:label="简单选择排序"/>
+        <activity android:name=".sort.select.S_Select_TreeActivity"
+            android:label="树形选择排序"/>
+        <activity android:name=".sort.select.S_Select_HeapActivity"
+            android:label="堆排序"/>
     </application>
 
 </manifest>

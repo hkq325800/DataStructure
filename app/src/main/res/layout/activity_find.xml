@@ -13,8 +13,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="顺序查找、折半查找、分块查找为静态查找表，没有插入和删除操作，因此采用顺序存储方法，通常用定长一维数组来表示。"
-            android:textSize="14sp" />
+            android:text="静态查找表"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="顺序查找、折半查找、分块查找为静态查找表，没有插入和删除操作，因此采用顺序存储方法，通常用定长一维数组来表示。包括顺序查找、折半查找、分块查找等。"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
@@ -51,6 +60,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="toBlock"
             android:padding="10dp"
             android:text="灵活运用分块查找"
             android:textSize="18sp"
@@ -62,6 +72,22 @@
             android:padding="10dp"
             android:text="又称为索引顺序查找，是顺序查找的一种改进方法。由分块有序的顺序表和索引表组成。其中分块有序的顺序表是将表R[0，n-1]分为b块；【每一块中的关键字不一定有序，但前一块中的最大关键字必须小于后一块中的最小关键字】，即表是分块有序的。而索引表则是取个块中的最大关键字及其起始位置构成的ID[0..b-1]，即ID[i]中存放第i块的最大关键字及该块表在表R中的起始位置。由于表R是分块有序的，所以索引表示一个递增有序表。要在索引顺序表中查找关键字key，首先在索引表中查找以确定待查数据元素所在的块，可以用顺序查找完成，若索引表较大，也可用折半查找。再在块中查找待查数据元素，此时用顺序查找。"
             android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="动态查找表"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="相对于静态查找表，它不仅包括查找操作，还可以有插入和删除操作。往往动态查找表是在查找过程中动态生成的，当查找成功时，可能伴随删除操作；而当查找失败时，可能伴随插入操作，因此记录查找成功或失败时的位置尤为重要。以下重点介绍二叉排序树、平衡二叉排序树及B-树"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
@@ -98,6 +124,21 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="了解B+树和B-树含义及其插入、删除和查找操作"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="了解红黑树含义及其插入、删除和查找操作"
             android:textSize="18sp"
             android:textStyle="bold" />
 

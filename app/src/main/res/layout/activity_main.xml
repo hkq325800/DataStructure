@@ -59,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:onClick="rank"
+        android:onClick="sort"
         android:padding="10dp"
         android:text="排序" />
 
