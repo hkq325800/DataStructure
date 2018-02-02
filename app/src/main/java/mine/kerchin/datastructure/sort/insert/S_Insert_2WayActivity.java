@@ -16,6 +16,10 @@ public class S_Insert_2WayActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_find);
+        setContentView(R.layout.activity_s_2way);
+    }
+
+    public void sort(int[] arr){
+
     }
 }

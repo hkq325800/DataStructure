@@ -16,7 +16,7 @@ public class F_BlockActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_f_half);
+        setContentView(R.layout.activity_f_block);
     }
 
     public static int find(int[] arr, int tar) {
